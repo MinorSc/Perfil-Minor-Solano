@@ -1,124 +1,29 @@
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #0D0D0D;
-    color: #B3B3B3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.navbar {
-    background-color: #1C1C1C;
+main {
+    flex: 1;
 }
 
-.nav-link,
-.navbar-brand {
-    color: #B3B3B3;
-}
-
-.nav-link:hover,
-.navbar-brand:hover {
-    color: #00FFFF;
-}
-
-
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-header h1,
-header h2 {
-    margin: 10px 0;
-}
-
-.btn-outline-success {
-    color: #00FFFF;
-    border-color: #39FF14;
-}
-
-.btn-outline-success:hover {
-    background-color: #00FFFF;
-    color: #0D0D0D;
-}
-
-.form-inline .form-control {
-    display: inline-block;
-    width: auto;
-    /* Ajusta el ancho según sea necesario */
-    vertical-align: middle;
-    /* Alinea verticalmente al centro */
-}
-
-.form-inline .btn {
-    display: inline-block;
-    vertical-align: middle;
-    /* Alinea verticalmente al centro */
-    margin-left: 5px;
-    /* Espacio entre el campo de texto y el botón */
-}
-
-h1,
-h2,
-h4 {
-    color: #00FFFF;
-}
-
-.cabecera {
-    background: linear-gradient(135deg, #0D0D0D, #1C1C1C 30%, #00FFFF 70%, #39FF14),
-    url('https://www.transparenttextures.com/patterns/circles.png');
-background-size: cover, 150px 150px;
-}
-
-
-
-.img__perfil {
-    background-image: url('/Assets/img/Transparente.png');
-    background-size: cover;
-    padding: 100px;
-    border-radius: 50%;
-    color: transparent;
-}
-
-.card {
-    background-color: #1C1C1C;
-    border-color: #39FF14;
-}
-
-.card-title,
-.card-text {
-    color: #B3B3B3;
-}
-
-.card-link {
-    color: #00FFFF;
-}
-
-.card-link:hover {
-    color: #39FF14;
-}
-
-.img-thumbnail {
-    border-radius: 50%;
-    max-width: 150px;
-    height: auto;
-}
-
-.parrafo__descripcion {
-    margin: 20px 0;
+.education-item, .experience-item {
+    margin-bottom: 20px;
     padding: 15px;
-    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-section {
-    margin: 20px 0;
+.education-item h3, .experience-item h3 {
+    margin-top: 0;
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
+.repository-item {
+    transition: transform 0.3s ease-in-out;
 }
 
-footer .card {
-    margin: 20px auto;
-    max-width: 100%;
+.repository-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }

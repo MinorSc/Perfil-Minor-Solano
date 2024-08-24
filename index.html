@@ -1,96 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- ANIMATE CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title>Minor Solano Camacho - Portafolio</title>
+    <title>Mi Currículum - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
-<body class="container">
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Currículum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="experiencia.html">Experiencia Laboral</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="estudios.html">Estudios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        <a class="nav-link" href="experiencia.html">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 btn-textarea" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0 btn-busqueda" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        
-            </div>
-        </nav>
-        <div class="cabecera">
-        <h1>Minor Solano Camacho</h1>
-        <h2>Desarrollador Front-End</h2>
-        <img src="" class="img__perfil" alt="">
-    </div>
-    </header>
-
-    <div class="parrafo__descripcion">
-        <p>Soy una persona apasionada por las tecnologías y el desarrollo web, siempre buscando aprender y mejorar mis
-            habilidades. Actualmente, estudio Desarrollo Web en Virtual Learning of America y en Alura LATAM, ambos
-            enfocados en Front End. Mi objetivo es convertir mi pasión en una carrera profesional, creando soluciones
-            innovadoras y eficientes.</p>
-    </div>
-
-    <section>
-        <h4>Habilidades</h4>
-        <ul class="list-group">
-            <li class="list-group-item active">HTML</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item disabled">JavaScript</li>
-            <li class="list-group-item disabled">Bootstrap</li>
-            <li class="list-group-item disabled">Vue</li>
-        </ul>
-    </section>
-
-    <div class="experiencia">
-        <!-- Aquí puedes agregar tu experiencia laboral o proyectos -->
-    </div>
-
-    <footer>
-        <h5>Desarrollado por Minor Solano Camacho</h5>
-        <div class="card">
-            <img class="card-img-top" data-src="holder.js/100x180/?text=Image cap" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title">Minor Solano</h4>
-                <p class="card-text">Redes Sociales</p>
-            </div>
-            <div class="card-body">
-                <a href="#" class="card-link">LinkedIn</a>
-                <a href="#" class="card-link">GitHub</a>
             </div>
         </div>
-    </footer>
-</body>
+    </nav>
 
+    <main class="container mt-4">
+        <h1>Bienvenido a mi Currículum</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="Assets/img/Transparente.png" alt="Tu Foto" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h2>Datos Personales</h2>
+                <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+                <p><strong>Edad:</strong> <span id="edad"></span></p>
+                <p><strong>Correo:</strong> <span id="correo"></span></p>
+                <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+                <h3>Sobre mí</h3>
+                <p id="sobreMi"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Mi Currículum
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+</body>
 </html>
